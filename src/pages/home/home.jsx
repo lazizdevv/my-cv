@@ -3,7 +3,7 @@ import React from "react";
 const PDFViewer = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/public/files/laziz-khamidov-cv.pdf";
+    link.href = "/public/laziz-khamidov-cv.pdf";
     link.download = "laziz-khamidov-cv.pdf";
     document.body.appendChild(link);
     link.click();
@@ -14,7 +14,7 @@ const PDFViewer = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
       <div className=" py-10 max-w-screen-lg w-[90%] min-h-screen text-center">
         <iframe
-          src="/public/files/laziz-khamidov-cv.pdf"
+          src="/public/laziz-khamidov-cv.pdf"
           title="PDF Viewer"
           className="w-full max-h-[600px] h-screen min-h-[500px] rounded-lg"
         ></iframe>
